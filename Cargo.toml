@@ -2,5 +2,14 @@
 name = "bb8-gaussdb"
 version = "0.1.0"
 edition = "2024"
+description = "Full-featured async (tokio-based) gaussdb connection pool (like r2d2)"
+license = "MIT"
+repository = "https://github.com/systemxlabs/bb8-gaussdb"
 
 [dependencies]
+bb8 = "0.9"
+tokio = { version = "1.0.0", features = ["rt"] }
+tokio-gaussdb = "0.1"
+
+[dev-dependencies]
+tokio = { version = "1.0.0", features = ["macros", "rt-multi-thread"] }
