@@ -6,6 +6,11 @@ description = "Full-featured async (tokio-based) gaussdb connection pool (like r
 license = "MIT"
 repository = "https://github.com/systemxlabs/bb8-gaussdb"
 
+[features]
+with-serde_json-1 = ["tokio-gaussdb/with-serde_json-1"]
+with-chrono-0_4 = ["tokio-gaussdb/with-chrono-0_4"]
+with-uuid-1 = ["tokio-gaussdb/with-uuid-1"]
+
 [dependencies]
 bb8 = "0.9"
 tokio = { version = "1.0.0", features = ["rt"] }
