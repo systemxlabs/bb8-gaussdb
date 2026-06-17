@@ -5,7 +5,7 @@
 [![CI](https://github.com/systemxlabs/bb8-gaussdb/workflows/CI/badge.svg)](https://github.com/systemxlabs/bb8-gaussdb/actions?query=workflow%3ACI)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
-Full-featured async (tokio-based) connection pool for [GaussDB](https://en.wikipedia.org/wiki/GaussDB) / [openGauss](https://opengauss.org/), built on [bb8](https://github.com/djc/bb8) and [tokio-gaussdb](https://crates.io/crates/tokio-gaussdb).
+A [GaussDB](https://en.wikipedia.org/wiki/GaussDB) / [openGauss](https://opengauss.org/) adaptor for [bb8](https://github.com/djc/bb8) connection pool, powered by [tokio-gaussdb](https://crates.io/crates/tokio-gaussdb).
 
 ## Usage
 
