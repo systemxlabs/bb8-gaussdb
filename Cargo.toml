@@ -2,7 +2,7 @@
 name = "bb8-gaussdb"
 version = "0.1.0"
 edition = "2024"
-description = "Full-featured async (tokio-based) gaussdb connection pool (like r2d2)"
+description = "A GaussDB / openGauss adaptor for bb8 connection pool"
 license = "MIT"
 repository = "https://github.com/systemxlabs/bb8-gaussdb"
 
