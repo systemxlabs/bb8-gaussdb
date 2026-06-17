@@ -73,11 +73,8 @@ where
         }
     }
 
-    fn is_valid(
-        &self,
-        conn: &mut Self::Connection,
-    ) -> impl std::future::Future<Output = Result<(), Self::Error>> + Send {
-        async move { conn.simple_query("").await.map(|_| ()) }
+    async fn is_valid(&self, conn: &mut Self::Connection) -> Result<(), Self::Error> {
+        conn.simple_query("").await.map(|_| ())
     }
 
     fn has_broken(&self, conn: &mut Self::Connection) -> bool {
